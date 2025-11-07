@@ -1,5 +1,10 @@
-# print("Hello world")
 
-
+# ismni harflarini listga chiqarish
 ism = input("Ismingizni kiriting:>")
-print(ism)
+
+letters = []
+
+for i in ism:
+    letters.append(i)
+
+print("Natija: ", letters)
