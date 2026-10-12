@@ -20,13 +20,28 @@
 
 # ZeroDivisionError - sonni 0 ga bo'lgandagi xatolik
 
-a = int(input("1-son:>>"))
-b = int(input("2-son:>>"))
+# a = int(input("1-son:>>"))
+# b = int(input("2-son:>>"))
+
+
+# try:
+#     natija = a / b
+#     print(natija)
+# except:
+#     print("0 ga bo'lib bo'lmaydi")
+
+# NameError - nom bo'yicha xatolik
+
+# name = "Umarxon"
+# print(ism)
 
 
 try:
-    natija = a / b
-    print(natija)
-except:
-    print("0 ga bo'lib bo'lmaydi")
-
+    if 5>6:
+        print("asdf")
+except ZeroDivisionError:
+    print("Nolga bo'lib qo'ydingiz")
+except NameError:
+    print("Nima buuu")
+except SyntaxError:
+    print("Hechqisi yo'q bu xatolik dasturchi tomonidan qilingan")
